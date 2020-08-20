@@ -104,6 +104,18 @@ if(ozz_build_tests AND NOT EMSCRIPTEN)
   add_subdirectory(test)
 endif()
 
+install(
+  TARGETS
+    ozz_base
+    ozz_geometry
+    ozz_options
+    ozz_animation_offline
+    ozz_animation
+  EXPORT ozz
+    LIBRARY DESTINATION lib/$<CONFIG>
+    ARCHIVE DESTINATION lib/$<CONFIG>)
+install(EXPORT ozz FILE ozz-config.cmake
+        DESTINATION share/cmake/ozz)
 
 install(FILES
   ${PROJECT_SOURCE_DIR}/CHANGES.md

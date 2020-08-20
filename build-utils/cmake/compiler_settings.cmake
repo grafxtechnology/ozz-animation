@@ -56,7 +56,7 @@ if(MSVC)
   set_property(DIRECTORY APPEND PROPERTY COMPILE_OPTIONS "/W4")
 
   # Set warning as error
-  set_property(DIRECTORY APPEND PROPERTY COMPILE_OPTIONS "/WX")
+  #set_property(DIRECTORY APPEND PROPERTY COMPILE_OPTIONS "/WX")
 
   # Select whether to use the DLL version or the static library version of the Visual C++ runtime library.
   foreach(flag ${cxx_all_flags})
