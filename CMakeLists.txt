@@ -115,7 +115,7 @@ install(
     LIBRARY DESTINATION lib/$<CONFIG>
     ARCHIVE DESTINATION lib/$<CONFIG>)
 install(EXPORT ozz FILE ozz-config.cmake
-        DESTINATION cmake/ozz)
+        DESTINATION cmake)
 
 install(FILES
   ${PROJECT_SOURCE_DIR}/CHANGES.md
